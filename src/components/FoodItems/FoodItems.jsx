@@ -4,18 +4,18 @@ import "./FoodItem.css";
 import { StoreContext } from '../Context/StoreContext';
 
 export default function FoodItems({ id, name, price, description, image }) {
-    // Accessing context and functions from StoreContext
+   
     const { cartItems, addToCard, removeFromCart } = useContext(StoreContext);
 
     return (
-        <div className='food-item'>
+        <div className='food-item  '>
             <div className='food-item-img-container'>
                 <img className='food-item-image' src={image} alt='' />
                 {!cartItems[id] ? (
-                    // If item not in cart, display add button
+                    
                     <img className='add' onClick={() => addToCard(id)} src={assets.add_icon_white} alt='' />
                 ) : (
-                    // If item in cart, display counter with remove and add buttons
+                  
                     <div className='food-item-counter'>
                         <img onClick={() => removeFromCart(id)} src={assets.remove_icon_red} alt='' />
                         <p>{cartItems[id]}</p>
