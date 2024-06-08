@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { assets } from '../assets/assets';
 import { CiSearch } from "react-icons/ci";
-import { FaBasketShopping } from "react-icons/fa6";
+import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { StoreContext } from './Context/StoreContext';
 import "./Navbar.css"
@@ -21,7 +21,7 @@ const Navbar = ({setShowLogin}) => {
         },
         {
             id: 2,
-            link: "Menu"
+            link: "Shop"
         },
         {
             id: 3,
@@ -55,7 +55,9 @@ const Navbar = ({setShowLogin}) => {
             <div id=" search-button" className="text-black pl-60  "> <CiSearch  size={24}/></div>
 
           <div id=" basket"className='text-black relative cursor-pointer'>
-               <Link to='/cart'><FaBasketShopping size={24} /></Link>
+               <Link to='/cart'><FaShoppingCart size={24} /></Link>
+               
+            
                <div className=''>         
            <div className= {getTotalCartAmount()===0?"":"absolute bottom-5 left-5 min-w-2 min-h-2 bg-red-500  rounded-full "}  >
             </div>  
