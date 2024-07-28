@@ -33,7 +33,7 @@
 .header{
     height: 37vw;
     margin: 30px auto;
-    background: url('D:\react_projects\Food-Website\src\assets\hero4.png')no-repeat;
+    background: url('D:\react_projects\Food-Website\src\assets\header_img.png')no-repeat;
     background-size: contain ;
     position: relative;
     background-size: cover;
@@ -55,7 +55,7 @@
 }
 .header-contents h2{
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.821);
+    color:white;
     font-size: max(4vw,40px);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
@@ -63,7 +63,7 @@
 
 }
 .header-contents p{
-    color: #000000d1;
+    color: #ffffffd1;
     font-size: 1vw;
     margin-bottom: 40px;
 }

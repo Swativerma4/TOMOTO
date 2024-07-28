@@ -4,13 +4,11 @@ import { Route, Routes } from 'react-router-dom'
 
 
 import Home from './components/pages/Home/Home'
+
 import Card from './components/pages/Card/Card'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
-
-
-
-
+import PlaceOrder from "./components/PlaceOrder/PlaceOrder"
 
 
 function App() {
@@ -24,6 +22,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Card />} />
+          <Route path='/order' element={<PlaceOrder/>} />
+
           
         </Routes>
          

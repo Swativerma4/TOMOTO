@@ -1,8 +1,8 @@
  import basket_icon from './basket_icon.png'
-import logo from './logo.png'
+import logo from "./logo.png"
 
 import search_icon from './search_icon.png'
-import menu_1 from './phone.png'
+import menu_1 from "./menu_1.png"
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
 import menu_4 from './menu_4.png'
@@ -84,11 +84,11 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Phone",
+        menu_name: "Salad",
         menu_image: menu_1
     },
     {
-        menu_name: "t.v",
+        menu_name: "Rolls",
         menu_image: menu_2
     },
     {
